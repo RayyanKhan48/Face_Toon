@@ -20,17 +20,13 @@ The datasets were cleaned in order to produce the desired outcome from our model
 
 ## Baseline
 The baseline model used was called style transfer. We used a pretrained 19-layer VGG (Visual Geometry Group) network available on Pytorch, which simply took two images and combined their styles in the output. However, the problem with this model was that it overlaid the two images onto each other without considering the position of the features; as a result a valid output wouldn't be expected from this model. Nonetheless, we were able to narrow our requirements from a model that converted faces to cartoons to a model that would be able to convert some features of a human face to cartoons.
-
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 <img src="Capture (26).png" width="700" alt="Image 1">
 
 ## CycleGAN
 CycleGAN incorporated two sets of unique generators and discriminators. Generator A  converted anime faces to human faces and was then checked by Discriminator A. Similarly, Generator B and Discriminator B performed the same operation but this time producing anime faces. Finally, these two pairs of generators and discriminators were combined by running a real anime image through Generator A and then through Generator B. After that, MSE (Mean Squared Error) Loss was applied to the real anime image. The idea was that if we could get the same image by converting it twice with our generator, then the style of the image space is learnt and the features of the image are kept  (hair colour, eye shape etc). 
 
 ## Training Data Results
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 <img src="Capture (27).png" width="700" alt="Image 2">
 
 ## Testing Data Results
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 <img src="Capture (28).png" width="500" alt="Image 3">
