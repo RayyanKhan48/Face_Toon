@@ -32,5 +32,5 @@ CycleGAN incorporated two sets of unique generators and discriminators. Generato
 <img src="https://github.com/RayyanKhan48/Face_Toon/assets/115880728/03975076-c4b8-44e5-bd92-b8338adc402e" width="700" alt="Image">
 
 ## Testing Data Results
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 <img src="https://github.com/RayyanKhan48/Face_Toon/assets/115880728/171a6be2-ad72-4649-af6f-8469eba87fd7" width="500" alt="Image">
